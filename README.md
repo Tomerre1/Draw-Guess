@@ -2,7 +2,7 @@
 
 ### Game Rules
 * 2 players 
-* Working onlu for Mobile devices
+* Working only for Mobile devices
 * First player to join the game - will draw a random given word, and the other will try to guess it. 
 * There are 3 different game levels. (easy - 1pt , medium - 3pt , hard - 5pt)
 
