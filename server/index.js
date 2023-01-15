@@ -22,11 +22,6 @@ io.on('connection', (socket) => {
 
   socket.on('signed', () => {
     activePlayers++;
-    console.log(
-      '%ctomer activePlayers:',
-      'color: white;background: blue;',
-      activePlayers
-    );
     if (activePlayers === 2) {
       io.sockets.emit('game full');
     }
