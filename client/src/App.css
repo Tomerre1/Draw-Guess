@@ -1,0 +1,71 @@
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  #root{
+    height: 100%;
+    width: 100%;
+  }
+  
+  canvas{
+    border: 2px solid black;
+    touch-action: none;
+    width: 100%;
+  }
+  
+  .content , .modePick{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .modePick {
+    height: 100%;
+  }
+
+  .content{
+    margin : 6% 0;
+  }
+
+  .waiting , .endContent{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .levelButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .easy {
+    background-color: #64dd17 !important;
+  }
+  
+  .hard{
+    background-color: #d32f2f !important;
+  }
+
+  .content > h2 , h3{
+    margin: 0;
+  }
+
+  .gameButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .highScores {
+    text-align: center;
+  }
+
+  .endGame{
+    background: #da0a0a !important;
+  }
