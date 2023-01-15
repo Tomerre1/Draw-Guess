@@ -112,39 +112,6 @@ const Canvas = ({ changeWord, setChangeWord }) => {
     socket.emit('finish draw');
   };
 
-  // const startDrawing = (e) => {
-  //   if (role === 'guess') return;
-  //   const rect = canvasRef.current.getBoundingClientRect();
-  //   contextRef.current.beginPath();
-  //   contextRef.current.moveTo(e.clientX - rect.x, e.clientY - rect.y);
-  //   setIsDrawing(true);
-  //   socket.emit('start draw', {
-  //     x: e.clientX - rect.x,
-  //     y: e.clientY - rect.y,
-  //   });
-  // };
-
-  // const draw = (e) => {
-  //   if (!isDrawing) return;
-  //   if (role === 'guess') return;
-  //   const rect = canvasRef.current.getBoundingClientRect();
-  //   contextRef.current.strokeStyle = color.hex;
-  //   contextRef.current.lineTo(e.clientX - rect.x, e.clientY - rect.y);
-  //   contextRef.current.stroke();
-  //   socket.emit('draw', {
-  //     x: e.clientX - rect.x,
-  //     y: e.clientY - rect.y,
-  //     color,
-  //   });
-  // };
-
-  // const finishDrawing = () => {
-  //   if (role === 'guess') return;
-  //   contextRef.current.closePath();
-  //   setIsDrawing(false);
-  //   socket.emit('finish draw');
-  // };
-
   const clear = () => {
     contextRef.current.clearRect(
       0,
