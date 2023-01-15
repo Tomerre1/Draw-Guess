@@ -60,6 +60,10 @@ io.on('connection', (socket) => {
   });
 });
 
+app.get('/**', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 const PORT = process.env.PORT || 4000;
 
 http.listen(PORT, () => console.log('Running on port ', PORT));
